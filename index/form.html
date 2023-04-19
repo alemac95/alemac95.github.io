@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spedizione</title>
+</head>
+<body>
+<table>
+    <form method="post" id="delivery" autocomplete="off">
+        <div>
+            <div>
+                <label for="name">Nome</label></div>
+            <div>
+                <input id="name" type="text" placeholder="nome" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="lastname">Cognome</label></div>
+            <div>
+                <input id=lastname type="text" placeholder="cognome" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="address">indirizzo</label>
+            </div>
+            <div>
+                <input type="text" name="address" id="address" placeholder="via roma" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="po">civico</label></div>
+            <div>
+                <input id="po" type="number" name="po" placeholder="1">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="cap">cap</label></div>
+            <div>
+                <input id="cap" type="number" name="cap" placeholder="0000" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="city">città</label></div>
+            <div style="display: inline">
+                <input id="city" type="text" name="city" placeholder="Roma" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="country">paese</label></div>
+            <div style="display: inline">
+                <input id="country" type="text" name="country" placeholder="Italia" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="province">province</label></div>
+            <div>
+                <select name="province" id="province">
+                    <option value="MI">Milano</option>
+                    <option value="RM">Roma</option>
+                    <option value="OTHER" selected="altro">altro</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="phone">telefono</label></div>
+            <div>
+                <input id="phone" name="phone" type="number" placeholder="333 0000000000" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="e-mail">e-mail</label></div>
+            <div>
+                <input id="e-mail" name="e-mail" type="email" required>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label for="note">note</label></div>
+            <div>
+                <textarea id="note" name="note" placeholder="note"></textarea>
+            </div>
+        </div>
+        <div>
+            <div>
+                <input type="submit" value="invia" placeholder="note">
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </form>
+    <button type="reset" form="delivery">reset</button>
+
+</table>
+</body>
+</html>
